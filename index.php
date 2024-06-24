@@ -8,34 +8,34 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- css -->
     <link rel="stylesheet" href="style.css">
+
+
 </head>
 <body>
-<div id="id">
+<div id="app">
+    
+    <header class="d-flex align-items-center justify-content-between ">
+        <div class="logo">
+            <a href="#"><img src="img/Spotify-logo-500x281-1.webp" alt=""></a>
+        </div>
+        <div>
+            <span>Collezione Dischi</span>
+        </div>
+    </header>
 
-<!-- <header class="d-flex">
-    <div class="logo">
-        <a href="#"><img src="img/Spotify-logo-500x281-1.webp" alt=""></a>
-    </div>
-    <div>
-        <span>Collezione Dischi</span>
-        <button>Carica Collezione</button>
-    </div>
-</header> -->
-
-<main>
-    <div class="container">
-        <div class="row">
-            <div class="col-4 disk-card" v-for="dischi in listaDischi">
-                <img :src="dischi.img" alt="">
-                <div>{{ dischi.name }}</div>
-                <div>{{ dischi.author }}</div>
-                <div>{{ dischi.year }}</div>
+    <main>
+        <div class="container text-center" >
+            <div class="row">
+                <div class="col-4 disk-card" v-for="dischi in listaDischi">
+                    <img :src="dischi.img" alt="">
+                    <div class="text-center name-disk">{{ dischi.name }}</div>
+                    <div class="text-center author-disk">{{ dischi.author }}</div>
+                    <div class="text-center year-disk">{{ dischi.year }}</div>
+                </div>
             </div>
         </div>
-    </div>
-</main>
-
-
+    </main>
+    
 </div>
 
 

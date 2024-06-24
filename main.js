@@ -6,18 +6,26 @@ createApp({
       //url api (locale)
 
         urlDischi: 'http://localhost/PHP/php-dischi-json/server.php',
-
         listaDischi: []
     }
   },
 
   methods: {
     apiCall() {
-      axios.get(this.urlDischi).then((response) => {
+      console.log('')
 
+      axios.get(this.urlDischi).then((response) => {
+        
         this.listaDischi = response.data;
+
       });
-    }
+    },
+  },
+
+  created () { 
+  this.apiCall(); 
+
+  console.log('sono su mounted')
   }
   
 }).mount('#app')

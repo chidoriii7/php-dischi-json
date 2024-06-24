@@ -1,3 +1,36 @@
-body {
-    background-color: red;
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.logo img{
+    width: 100px;
+}
+
+main{
+    padding: 100px;
+    background-color: darkslateblue;
+    color: white;
+}
+
+
+main img{
+    width: 300px;
+}
+
+.name-disk{
+    font-size: 30px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.author-disk{
+    font-size: 15px;
+}
+
+.year-disk{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 30px;
 }
